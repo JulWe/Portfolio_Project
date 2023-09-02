@@ -39,6 +39,10 @@ h1 {
 h2 {
     font-size: 64px;
 }
+
+h4 {
+   font-size: 48px;
+}
  p {
     font-weight: normal;
     font-size: 16px;
@@ -71,7 +75,7 @@ h2 {
     padding: 160px 20px;
    }
    
-   .content {
+ .content {
     margin: 30px;
 
  }
@@ -100,13 +104,10 @@ h2 {
    margin: 0;
  }
 
- .content img {
+ .content-container img {
     border-radius: 4px;
-    width: 400px;
-    height: 400px;
-    margin: 0 50px;
+    margin: 30px auto;
  }
-
    
  .contact {
    background-color: var(--secondary-color);
@@ -115,28 +116,25 @@ h2 {
    padding: 20px;
 }
 
-.social {
+ .social {
    background-color: var(--secondary-color);
    border-radius: 4px;
-   margin: 24px;
    padding: 20px;
 }
 
-.social h3 {
+ .social h3 {
    font-size: 18px;
 }
 
-.social a {
+ .social a {
    text-decoration: none;
    color: var(--font-color);
 }
 
-.social a:hover {
+ .social a:hover {
    color: var(--branding-color);
    cursor: pointer;
 }
-
-
 
  .btn-branding {
     background: var(--branding-color);
@@ -166,6 +164,45 @@ h2 {
     padding: 100px 60px;
  }
 
+ footer {
+   margin: 60px 0;;
+ }
+
+ footer .contact-box {
+   background-color: var(--secondary-color);
+   padding: 30px 120px;
+   border-radius: 4px;
+ }
+
+ footer .contact-box p {
+   margin: 0;
+ }
+
+footer .email-link {
+   text-decoration: none;
+   color: black;
+   font-size: 24px;
+   text-align: center;
+}
+
+footer .email-link:hover {
+   color: var(--branding-color);
+}
+
+footer .social-links a {
+   margin: 0 20px;
+   color: var(--branding-color);
+   background-color: var(--secondary-color);
+   padding: 10px 15px;
+   font-size: 18px;
+   border-radius: 50%;
+   transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+   color: white;
+   background-color: var(--branding-color);
+}
 
  @media (max-width: 900px) {
     h1 {
@@ -175,6 +212,14 @@ h2 {
 
     h2 {
         font-size: 44px;
+    }
+
+    h4 {
+      font-size: 25px;
+    }
+
+    .btn-branding {
+      font-size: 16px;
     }
 
     .hero {
@@ -197,15 +242,20 @@ h2 {
     .content h1 {
       font-size: 44px;
     }
-    .content img {
+    .content-container img {
         margin: 30px;
     }
     img {
       max-height: 300px;
    }
+
+   footer .contact-box {
+   padding: 30px;
+ }
  }
 
  @media (max-width: 550px) {
    .nav-item {
    margin-left: 20px;
 }
+ }
