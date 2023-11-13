@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-   font-size: 48px;
+   font-size: 45px;
 }
  p {
     font-weight: normal;
@@ -151,6 +151,7 @@ h3 {
     font-size: 18px;
     line-height: 27px;
     padding: 18px 30px;
+    margin:10px;
  }
 
  .btn-branding:hover {
@@ -186,6 +187,10 @@ h3 {
    margin: 0;
  }
 
+ footer .certificates {
+   background-color: var(--secondary-color);
+   padding: 30px 120px;
+ }
 footer .email-link {
    text-decoration: none;
    color: black;
